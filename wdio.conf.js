@@ -1,12 +1,12 @@
 const { join } = require('path');
 const fs = require('fs');
 
-const packageJson = JSON.parse(fs.readFileSync('./package.json'));
+const packageJson = JSON.parse(fs.readFileSync('./package.json').toString());
 const {
   build: { productName },
 } = packageJson;
 
-process.env.TEST = true;
+process.env.TEST = 'true';
 
 const config = {
   services: [

@@ -1,8 +1,8 @@
-import { setupBrowser, WebdriverIOBoundFunctions } from '@testing-library/webdriverio';
-import { queries } from '@testing-library/dom';
+import { setupBrowser } from '@testing-library/webdriverio';
+import { WebdriverIOQueries } from '@testing-library/webdriverio/dist/types';
 
 describe('application loading', () => {
-  let screen: WebdriverIOBoundFunctions<typeof queries>;
+  let screen: WebdriverIOQueries;
 
   before(() => {
     screen = setupBrowser(browser);
@@ -21,11 +21,11 @@ describe('application loading', () => {
         let bounds = (await browser.electronBrowserWindow('getBounds')) as { width: number; height: number };
         expect(bounds.width).toEqual(200);
         expect(bounds.height).toEqual(300);
-        let biggerClickCount = await browser.$('.click-count .bigger').getText();
+        let [biggerClickCount] = await Promise.all([browser.$('.click-count .bigger').getText()]);
         expect(biggerClickCount).toEqual('0');
         const elem = await browser.$('.make-bigger');
         await elem.click();
-        biggerClickCount = await browser.$('.click-count .bigger').getText();
+        [biggerClickCount] = await Promise.all([browser.$('.click-count .bigger').getText()]);
         expect(biggerClickCount).toEqual('1');
         bounds = (await browser.electronBrowserWindow('getBounds')) as { width: number; height: number };
         expect(bounds.width).toEqual(210);

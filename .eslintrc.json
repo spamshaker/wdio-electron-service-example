@@ -39,7 +39,8 @@
       "plugins": ["@typescript-eslint", "import", "node"],
       "env": {
         "node": true,
-        "mocha": true
+        "mocha": true,
+        "browser": true
       },
       "rules": {
         "no-unused-vars": "off",
@@ -55,7 +56,7 @@
         ]
       },
       "parserOptions": {
-        "ecmaVersion": 2020,
+        "ecmaVersion": "latest",
         "sourceType": "module",
         "project": "./tsconfig.json"
       },

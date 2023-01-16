@@ -5,10 +5,10 @@
     }
   },
   "compilerOptions": {
-    "target": "ES2020",
+    "target": "ESNext",
     "module": "ESNext",
     "baseUrl": "./",
-    "moduleResolution": "node",
+    "moduleResolution": "Node16",
     "esModuleInterop": true,
     "strict": true,
     "noUnusedLocals": true,
@@ -19,14 +19,22 @@
     "allowSyntheticDefaultImports": true,
     "newLine": "lf",
     "noEmitOnError": true,
-    "lib": ["DOM", "ES2020"],
     "noImplicitAny": true,
     "noUnusedParameters": false,
     "resolveJsonModule": true,
     "allowJs": true,
+    "skipDefaultLibCheck": true,
+    "skipLibCheck": true,
     "checkJs": true,
     "noEmit": true,
-    "types": ["node", "mocha", "webdriverio/async", "expect-webdriverio"],
+    "types": [
+      "node",
+      "mocha",
+      "webdriverio/async",
+      "expect-webdriverio",
+      "@wdio/globals/types",
+      "./wdio-electron-service"
+    ],
     "typeRoots": ["./node_modules/@types"]
   },
   "include": ["**/*.ts"],

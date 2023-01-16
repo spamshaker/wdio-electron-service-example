@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PublishConfigData" remoteFilesAllowedToDisappearOnAutoupload="false">
+    <serverData>
+      <paths name="calla ftp">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="/" />
+            <mapping local="$PROJECT_DIR$/node_modules/.pnpm/@wdio+globals@8.1.3" web="/" />
+            <mapping local="$PROJECT_DIR$/node_modules/@testing-library/webdriverio" web="/" />
+            <mapping local="$PROJECT_DIR$/node_modules/@wdio/globals" web="/" />
+            <mapping local="$PROJECT_DIR$/node_modules/wdio-electron-service" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="calla sftp">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="/" />
+            <mapping local="$PROJECT_DIR$/node_modules/.pnpm/@wdio+globals@8.1.3" web="/" />
+            <mapping local="$PROJECT_DIR$/node_modules/@testing-library/webdriverio" web="/" />
+            <mapping local="$PROJECT_DIR$/node_modules/@wdio/globals" web="/" />
+            <mapping local="$PROJECT_DIR$/node_modules/wdio-electron-service" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="dev.calla.no">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="/" />
+            <mapping local="$PROJECT_DIR$/node_modules/.pnpm/@wdio+globals@8.1.3" web="/" />
+            <mapping local="$PROJECT_DIR$/node_modules/@testing-library/webdriverio" web="/" />
+            <mapping local="$PROJECT_DIR$/node_modules/@wdio/globals" web="/" />
+            <mapping local="$PROJECT_DIR$/node_modules/wdio-electron-service" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="kosma www sftp">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="/" />
+            <mapping local="$PROJECT_DIR$/node_modules/.pnpm/@wdio+globals@8.1.3" web="/" />
+            <mapping local="$PROJECT_DIR$/node_modules/@testing-library/webdriverio" web="/" />
+            <mapping local="$PROJECT_DIR$/node_modules/@wdio/globals" web="/" />
+            <mapping local="$PROJECT_DIR$/node_modules/wdio-electron-service" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+    </serverData>
+  </component>
+</project>
